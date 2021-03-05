@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    background-color: #fff;
+	position: relative;
+}
+
+header {
+    max-width: 34rem;
+    margin: 0 auto;
+}
+
+nav {
+	margin-bottom: 3.5rem;
+	background-color: #ade8f4;
+}
+.menu.sticky{
+	background-color: #0186C4;
+}
+
+.sticky {
+	position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+ul.menu {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 1.2rem;
+}
+
+ul.menu a {
+	text-transform: uppercase;
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	border-bottom: 0.1rem transparent;
+	color: #fff;
+}
+
+
+ul.menu a:hover{
+	color: #ade8f4;
+	border-bottom: 0.2rem solid #ade8f4;
+}
+
+ul.submenu > li a {
+	text-decoration: none;
+}
+
+ul.menu li {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	text-align: center;
+	position: relative;
+}
+
+svg path {
+	fill: #f5f5f5;
+}
+
+svg {
+	display: block;
+	width: 1rem;
+	margin-left: 0.75rem;
+}
+
+li.dropdown > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.submenu {
+	padding: 0;
+	width: 100%;
+	background-color: #0186C4;
+	border-radius: 0 0 .5rem .5rem;
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 100;
+	transition: all 0.5s ease-in-out;
+}
+  
+ul.submenu li {
+	text-align: center;
+/*	background-color: #90e0ef;*/
+} 
+ 
+ul.menu > li {
+	margin: 0.5rem 0;
+	color: #fff;
+} 
+
+ul.menu li:hover > ul {
+ 	visibility: visible;
+ 	opacity: 1;
+ 	background-color: #0186C4;
+
+}
+
+ul.menu li:focus-within > ul,
+ul.menu li > ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+ul.submenu {
+	right: unset;
+	left: 0;
+}
+.header{
+	padding: 10rem 3rem;
+	background: url('../img/dragon.jpg');
+	background-size:cover;
+	width: 100%;
+	max-height: 42rem;
+}
+
+.header h1 {
+	font-family: 'Caesar Dressing', cursive;
+	font-size: 12rem;
+	letter-spacing: 1.5rem;
+	font-weight: bold;
+	padding-top: 2rem;
+	margin-top: 8rem;
+	color: #fff;
+}
+
+.summary{
+	display: flex;
+	flex-direction: column;
+}
+
+.summary-img{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.summary-img img{
+	max-width: 47%;
+	margin: 2rem 1rem;
+}
+
+.summary-p{
+	margin: 1rem;
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 1.2rem;
+	color: #03045e;
+	line-height: 2.167;
+}
+
+#summary-p1{
+	padding-top: 3rem;
+}
+
+.about-content-p{
+	margin: 0;
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 1.2rem;
+	color: #03045e;
+	line-height: 2.167;
+}
+
+.about-content-p-out{
+	margin: 1rem 1.5rem;
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 1.2rem;
+	color: #03045e;
+	line-height: 2.167;
+}
+
+.about,
+.summary,
+.characters,
+.adaptations,
+.video_game{
+	padding: 2rem;
+}
+
+.about-content{
+	display: flex;
+	max-width: 100%;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-content-left{
+	max-width:50%;
+}
+
+.about-content-left,.about-content-right{
+	padding: 0 0.5rem;
+}
+
+.char-space{
+	margin: 1rem 0;
+	padding: 0 1rem;
+	width: 100%;
+	border-top: 0.5rem solid #ade8f4;
+}
+
+
+.about h2,
+.summary h2,
+.characters h2,
+.adaptations h2,
+.video_game h2 {
+	text-align: center;
+	margin: 0rem 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 4rem;
+	color: #fff;
+	text-align: left;
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.8rem;
+	background-color: #03045e;
+}
+
+#about{
+	padding-top: 5rem;
+}
+
+.characters p,
+.adaptations p,
+.video_game p{
+	margin: 2.5rem 1rem;
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 1.2rem;
+	color: #03045e;
+	line-height: 2.167;
+}
+
+.subinfo p{
+	margin: 0 1rem;;
+}
+
+.subinfo h3 {
+	margin: 1rem;
+	font-family: 'Libre Baskerville', serif;;
+	font-size: 2rem;
+	color: #0077b6;
+	line-height: 2.167;
+}
+
+.char-img{
+	max-height: 35rem;
+	width: 100%;
+	padding: 0 1rem;
+}
